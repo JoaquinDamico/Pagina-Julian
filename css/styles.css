@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Open+Sans:wght@600&family=Roboto+Condensed&family=Roboto+Slab&family=Roboto:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*SECCION NAVEGACION*/
+
+.nav{
+    background-color: black;
+    height: 65px;
+}
+
+.nav-item{
+    display: flex;
+    align-items: center;
+}
+
+.nav-link{
+    color: white;
+}
+
+.titulo{
+    position: absolute;
+    top: 15px;
+    color: white;
+    left: 25px;
+}
+
+/*SECCION DESCRIPCION*/
+
+.img-descripcion{
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/fondo2.jpg);
+    background-size:100%;
+    background-position: 100%;
+    height: 400px;
+    background-blend-mode: darken;
+}
+
+.description{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.tituloDescripcion{
+    font-size: 3.2rem;
+    margin-top: 20px;
+}
+
+.contenedorDescription{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+    color: white;
+}
+
+.parrafoDescripcion{
+    width: 70%;
+    margin-top: 25px;
+}
+
+/*SECCION FOTOS*/
+
+.fila {
+    display: flex;
+    justify-content:center;
+    margin: 30px 0;
+}
+
+.fila .proyecto {
+    max-width: 250px;
+    border: 1px solid #000;
+    margin: 0 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.fila .proyecto img {
+    width: 100%;
+    height: 100%;
+    ;
+    filter: grayscale(1);
+    object-fit: cover;
+    transition: .5s;
+}
+
+.fila .proyecto:hover img {
+    filter: grayscale(0);
+}
+
+/*SECCION HORARIOS*/
+
+.bordes{
+    margin-top: 80px;
+    border: black 1px solid;
+    border-radius: 5px;
+}
+
+.bordes-dias{
+    border-bottom: black solid 1px;
+}
+
+.dias{
+    font-weight: bold;
+}
+
+.columnas{
+    margin-top: 5px;
+}
+
+.ocupado:hover{
+    color: red;
+}
+
+.disponible:hover{
+    color: rgb(3, 194, 12);
+}
+
+/*SECCION CONTACTO*/
+
+.color_icono{
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+}
+
+.iconos{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    background-color: #000000;
+}
+
+.contacto_titulo{
+    display: flex;
+    justify-content: center;
+    padding-top: 95px;
+    padding-bottom: 15px;
+}
+
+.titulo_contacto{
+    font-size: 1.5rem;
+}
+
+.separar{
+    padding-right: 15px;
+}
